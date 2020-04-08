@@ -1,0 +1,56 @@
+
+.container{
+    padding-top:10px;
+}
+
+.hinata{
+    text-align: center;
+    background-image: url("https://dailyanimeart.files.wordpress.com/2017/03/hinata-appears.jpg?w=1108&h=623");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+iframe{
+    padding-top: 20px;
+    width: 100%;
+    display: none;
+
+}
+
+#arrange{
+    width: 30%;
+    margin: 0 auto;
+}
+
+#addcenter{
+    text-align: center;
+}
+
+#img-container{
+    width: 100%;
+}
+
+.caption-full{
+    padding: 9px;
+}
+
+#deleteform{
+    display: inline;
+}
+
+.invisiblebtn{
+    display: none;
+}
+
+.bg{
+    background-image: url(https://cdn.cnn.com/cnnnext/dam/assets/181010131059-australia-best-beaches-cossies-beach-cocos3.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+  top: 0; 
+  left: 0; 
+    min-width: 100%;
+  min-height: 100%;
+}
+
+

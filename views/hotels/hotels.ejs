@@ -1,0 +1,37 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+    <header class="jumbotron text-center">
+        <h1>Welcome to Hotels Search</h1>
+        <p>
+            view our hand pick Hotels from all over India
+        </p>
+        <% if (currentUser && currentUser._id == "5e8c563983545e29cc30cbf7") { %>
+        <p>
+            <a href="/hotels/new" class="btn btn-primary">Add New hotel</a>
+        </p>
+        <%};%>
+        <form class="text-right" action="/hotels/search" method="GET">
+            <input type="Search" class="border border-primary" name="search" placeholder="place">
+            <button class="btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        
+        <p class="text-right">
+            <a href="/hotels">show all hotels</a>
+        </p>
+        
+    </header>
+
+    <div class="row text-center">
+        <% hotels.forEach(function(hotel){ %>
+        <div class="col-md-3 col-sm-6">
+            <div class="img-thumbnail">
+                <a href="/hotels/<%=hotel._id%>"><img class="img-thumbnail border-0 " src="<%= hotel.image %>"></a>
+            </div>
+        </div>
+        <% }); %>
+    </div>
+</div>
+
+
+<%- include ('../partials/footer') %>

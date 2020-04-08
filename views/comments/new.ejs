@@ -1,0 +1,21 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+       <h1 id="addcenter">Add Comment to <%= camp.title %></h1>
+       <div id="arrange">
+           <form action="/camps/<%=camp._id%>/comment" method="POST">
+               <div class="form-group">
+                   <textarea class="form-control" rows="7" cols="30" name="comments[text]" placeholder="comment"></textarea>
+               </div>
+               <div class="form-group">
+                   <button class="btn btn-primary btn-lg">submit</button>
+               </div>
+            </form>
+       </div>
+</div>
+
+
+
+
+
+<%- include ('../partials/footer') %>

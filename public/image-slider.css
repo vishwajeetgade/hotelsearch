@@ -1,0 +1,35 @@
+#slider {
+    overflow: hidden;
+    width: 810px;
+}
+
+#slider .slides {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 6000px;
+}
+
+#slider .slide {
+    float: left;
+    width: 810px;
+    list-style-type: none;
+}  
+
+/*.btn-next, .btn-prev{
+  position: absolute;
+  top: 20%;
+  cursor: pointer;
+  color: white;
+  background: #3949ab;
+  padding: 10px;
+  font-size: 10px;
+  border:none;
+}
+
+.btn-prev{
+  left: 0px;
+}
+.btn-next{
+  right: 0px;
+}*/
